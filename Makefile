@@ -10,4 +10,7 @@ migrate:
 rollback:
 	php artisan migrate:rollback
 
-.PHONY: createProduct createReview migrate rollback
+seed:
+	php artisan db:seed
+
+.PHONY: createProduct createReview migrate rollback seed
