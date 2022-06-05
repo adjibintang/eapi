@@ -4,4 +4,10 @@ createProduct:
 createReview:
 	php artisan make:model Model/Review -a
 
-.PHONY: createProduct createReview
+migrate:
+	php artisan migrate
+
+rollback:
+	php artisan migrate:rollback
+
+.PHONY: createProduct createReview migrate rollback
