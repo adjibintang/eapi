@@ -13,4 +13,7 @@ rollback:
 seed:
 	php artisan db:seed
 
-.PHONY: createProduct createReview migrate rollback seed
+tinker:
+	php artisan tinker
+
+.PHONY: createProduct createReview migrate rollback seed tinker
