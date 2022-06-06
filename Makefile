@@ -16,4 +16,7 @@ seed:
 tinker:
 	php artisan tinker
 
-.PHONY: createProduct createReview migrate rollback seed tinker
+auth:
+	php artisan make:auth
+
+.PHONY: createProduct createReview migrate rollback seed tinker auth
