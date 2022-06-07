@@ -7,6 +7,9 @@ createReview:
 migrate:
 	php artisan migrate
 
+refreshMigrate:
+	php artisan migrate:refresh
+
 rollback:
 	php artisan migrate:rollback
 
@@ -19,4 +22,4 @@ tinker:
 auth:
 	php artisan make:auth
 
-.PHONY: createProduct createReview migrate rollback seed tinker auth
+.PHONY: createProduct createReview migrate rollback seed tinker auth refreshMigrate
